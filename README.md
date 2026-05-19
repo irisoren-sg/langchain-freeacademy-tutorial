@@ -28,7 +28,7 @@ source agent_env/bin/activate
 3. Install LangChain  + LangGraph + Ollama bindings
 
 ```
-pip install langchain langgraph langchain-community ollama
+pip install langchain langgraph langchain-community ollama langchain-ollama
 ```
 
 
