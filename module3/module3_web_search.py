@@ -27,7 +27,6 @@ def web_search(query: str) -> str:
                 f"URL: {item.get('href', '')}\n"
                 f"Content: {item.get('body', '')[:300]}\n"
             )
-
         return "\n---\n".join(results)
 
     except Exception as e:
@@ -51,7 +50,7 @@ def summarize_text(text: str, max_sentences: int = 3) -> str:
 llm = ChatOllama(model="llama3.1", temperature=0)
 tools = [web_search, summarize_text]
 
-agent = create_react_agent(
+agent = create_agent(
     model=llm,
     tools=tools,
 )
