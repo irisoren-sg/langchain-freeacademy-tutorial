@@ -4,12 +4,13 @@ that has been modified to run with llama3
 
 Setup  instructions 
 
-1. Install ollama and llama3
+1. Install ollama and llama3, mistral
 
 ```
 # Install Ollama: https://ollama.com
 # Then pull Llama3:
 ollama pull llama3
+ollama pull mistral
 
 # Run a quick interactive test:
 ollama run llama3
