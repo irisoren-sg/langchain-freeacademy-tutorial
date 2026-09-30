@@ -1,6 +1,6 @@
 This repo contains code from
  https://freeacademy.ai/courses/agentic-ai-python-langchain 
-that has been modified to run with llama3
+that has been modified to run with local llms: llama3/mistral
 
 Setup  instructions 
 
