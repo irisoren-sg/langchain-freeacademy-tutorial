@@ -1,15 +1,16 @@
 This repo contains code from
  https://freeacademy.ai/courses/agentic-ai-python-langchain 
-that has been modified to run with llama3
+that has been modified to run with local llms: llama3/mistral
 
 Setup  instructions 
 
-1. Install ollama and llama3
+1. Install ollama and llama3, mistral
 
 ```
 # Install Ollama: https://ollama.com
 # Then pull Llama3:
 ollama pull llama3
+ollama pull mistral
 
 # Run a quick interactive test:
 ollama run llama3
