@@ -20,7 +20,7 @@ def draft_email_node(state: ApprovalState) -> dict:
     """Draft an email based on the user's request."""
     response = llm.invoke([
         SystemMessage(content=(
-            "Draft a professional email based on the user's request. "
+            "Draft a very brief email, no more than 2 sentences based  the user's request. "
             "Return ONLY the email content (subject and body)."
         )),
         *state["messages"]
@@ -56,9 +56,10 @@ def send_email_node(state: ApprovalState) -> dict:
 
 def reject_node(state: ApprovalState) -> dict:
     """Handle rejected email."""
+    print("[Email] Reject email...")
     return {
         "sent": False,
-        "messages": [AIMessage(content="Email was not sent. Let me know if you'd like to revise it.")]
+        "messages": [AIMessage(content="Email was not sent.")]
     }
 
 
